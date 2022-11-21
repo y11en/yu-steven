@@ -12,7 +12,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: init
       run: | 
-         git config pull.rebase false
          git config --local user.name "GitHub Actions"
          git config --local user.email "actions@github.com"
     - name: push main
